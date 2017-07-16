@@ -9,7 +9,6 @@ var wwwroot = './www'
 
 // npm dependencies
 gulp.task('copylib', (cb) => {
-    console.log('test');
     return gulp.src([`/lib/**/*`], {base: '/lib'})
         .pipe(gulp.dest(`${wwwroot}/lib/`));
 });
@@ -17,7 +16,6 @@ gulp.task('copylib', (cb) => {
 
 // copy files
 gulp.task('copysrc', (cb) => {
-    console.log('test');
     return gulp.src(['src/**/*'], {base: 'src'})
         .pipe(gulp.dest(`${wwwroot}`));
 });
@@ -38,7 +36,6 @@ gulp.task('tsc', (cb) => {
 });
 // inject dependencies
 gulp.task('insertjs', function(cb){
-    console.log('test');
     return gulp.src(`${wwwroot}/index.html`)
         .pipe(inject(gulp.src([`${wwwroot}/components/controllers/*.js`], {base: wwwroot}), {
                 starttag: '<!-- gulp:controllers -->',
