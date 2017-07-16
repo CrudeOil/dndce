@@ -1,0 +1,8 @@
+<h2>Pick a race</h2>
+<p>There are shitloads of races in the world of Dungeons and Dragons. Pick one.</p>
+<div ng-repeat="race in races">
+  <img src="img/{{race.name}}.jpg" alt="{{race.name}}">
+  <h3>{{race.name}}</h3>
+  <p>{{race.description}}</p>
+  <hr>
+</div>

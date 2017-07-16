@@ -4,6 +4,10 @@ body {
     padding-top: 65px;
 }
 
-.panel {
+.img-float-left {
+    float: left;
+}
 
+.img-float-right {
+    float: right;
 }

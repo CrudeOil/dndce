@@ -1,10 +1,17 @@
 angular.module('DNDCE')
-.config(['$routeProvider', function($routeProvider) {
-    $routeProvider
-    .when('/', {
-        templateUrl: 'components/templates/creator.html',
-        controller: 'creatorController',
-        controllerAs: '$ctrl'
+.config(['$stateProvider', function($stateProvider) {
+    $stateProvider
+    .state('root', {
+        url: '',
+        templateUrl: 'components/templates/intro.html'
     })
-    .otherwise({templateUrl: 'components/templates/404.html'});
+    .state('intro', {
+        url: '/intro',
+        templateUrl: 'components/templates/intro.html'
+    })
+    .state('race', {
+        url: '/race',
+        templateUrl: 'components/templates/race.html',
+        controller: 'raceController'
+    })
 }]);

@@ -2,5 +2,6 @@ angular.module('DNDCE.controllers', []);
 angular.module('DNDCE', [
     'ngRoute',
     'ui.bootstrap',
-    'DNDCE.controllers'
+    'DNDCE.controllers',
+    'ui.router'
 ]);
