@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Character Editor for Dungeons and Dragons 5th edition",
   "main": "gulpfile.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
