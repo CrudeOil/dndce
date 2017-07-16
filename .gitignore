@@ -1,0 +1,12 @@
+# dependency stuff
+lib/*
+node_modules/*
+
+# npm log
+npm-debug.log
+
+# deployed stuff
+www/*
+
+# generated stuff
+src/**/*.js*

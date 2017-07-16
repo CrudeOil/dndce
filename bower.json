@@ -1,0 +1,34 @@
+{
+  "name": "dndce",
+  "homepage": "https://github.com/CrudeOil/dndce",
+  "authors": [
+    "CrudeOil <adraisma@gmail.com>"
+  ],
+  "description": "Character Editor for Dungeons and Dragons 5th edition",
+  "main": "gulpfile.js",
+  "keywords": [
+    "dnd",
+    "5e",
+    "character"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "angular-ui-bootstrap": "ui-bootstrap#^2.5.0",
+    "bootstrap": "^3.3.7",
+    "angular-bootstrap": "^2.5.0",
+    "angular-resource": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-ui": "^0.4.0"
+  }
+}
