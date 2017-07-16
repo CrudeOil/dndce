@@ -4,10 +4,15 @@ body {
     padding-top: 65px;
 }
 
-.img-float-left {
-    float: left;
+img {
+    margin: 5px;
 }
 
-.img-float-right {
-    float: right;
+h3 {
+    margin-top: 5px;
+}
+
+.panel-title {
+    font-size: 17pt;
+    font-weight: bold;
 }

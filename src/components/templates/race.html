@@ -1,8 +1,31 @@
-<h2>Pick a race</h2>
-<p>There are shitloads of races in the world of Dungeons and Dragons. Pick one.</p>
-<div ng-repeat="race in races">
-  <img src="img/{{race.name}}.jpg" alt="{{race.name}}">
-  <h3>{{race.name}}</h3>
-  <p>{{race.description}}</p>
+<h2>Pick a race <small>There are shitloads of races in the world of Dungeons and Dragons. Pick one.</small></h2>
+<uib-accordion close-others="true">
+  <div uib-accordion-group ng-repeat="race in races" class="panel-default" heading="{{race.name}}">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="img/{{race.name}}.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-9">
+        <h3>Description</h3>
+        {{race.description}}
+      </div>
+    </div>
+    <h3>Choices:</h3>
+    <div ng-repeat="choice in race.choices">
+      <h4>{{choice.name}}</h4>
+      <table class="table">
+        <tr>
+          <th>Option</th>
+          <th>Description</th>
+          <th ng-if="choice.options[0].modifiers.core">Core mods</th>
+        </tr>
+        <tr ng-repeat="option in choice.options">
+          <td>{{option.name}}</td>
+          <td>{{option.description}}</td>
+          <td ng-if="option.modifiers.core"><ul><li ng-repeat="(stat, mod) in option.modifiers.core">+{{mod}} to {{stat}}</li></ul></td>
+        </tr>
+      </table>
+    </div>
+  </div>
   <hr>
-</div>
+</uib-accordion>

@@ -10,7 +10,7 @@ angular.module('DNDCE')
         templateUrl: 'components/templates/intro.html'
     })
     .state('race', {
-        url: '/race',
+        url: '/race:selected',
         templateUrl: 'components/templates/race.html',
         controller: 'raceController'
     })
